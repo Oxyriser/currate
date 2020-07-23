@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  backend:
+    image: currate-backend
+    build:
+      context: backend
+    environment:
+      - CMC_API_KEY=${CMC_API_KEY}
+      - CRYPTOCOMPARE_API_KEY=${CRYPTOCOMPARE_API_KEY}
+    ports:
+      - "5000:5000"
+  frontend:
+    image: currate-frontend
+    build:
+      context: frontend
+    ports:
+      - "80:80"
+
+

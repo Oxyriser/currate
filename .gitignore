@@ -1,0 +1,10 @@
+# General
+.env
+
+# Frontend
+frontend/elm-stuff
+frontend/elm.js
+frontend/elm.min.js
+
+# Backend
+backend/__pycache__
